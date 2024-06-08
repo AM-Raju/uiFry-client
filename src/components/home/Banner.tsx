@@ -34,7 +34,7 @@ const Banner = () => {
           <h1 className="text-6xl font-bold">
             Make The Best <br /> Financial Decisions
           </h1>
-          <p className="max-w-[45ch]">
+          <p className="max-w-[50ch] font-medium tracking-wide text-gray-500">
             Cum et convallis risus placerat aliquam, nunc. Scelerisque aliquet
             faucibus tincidunt eu adipiscing sociis arcu lorem porttitor.
           </p>
@@ -56,7 +56,7 @@ const Banner = () => {
                 />
               </svg>
             </Button>
-            <button className="flex items-center justify-center gap-4 font-semibold text-lg">
+            <button className="flex items-center justify-center gap-4 font-medium text-lg">
               <svg
                 width="29"
                 height="29"

@@ -5,7 +5,7 @@ import Button from "./Button";
 
 const Navbar = () => {
   return (
-    <div className="flex justify-between items-center font-clashDisplay  pt-10 font-semibold tracking-wide">
+    <div className="flex justify-between items-center font-clashDisplay  pt-10 font-medium tracking-wide">
       <div className="flex gap-11 items-center">
         <Logo></Logo>
         <nav className="space-x-5 ">

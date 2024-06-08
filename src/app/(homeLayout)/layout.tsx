@@ -17,6 +17,7 @@ export default function RootLayout({
     <div className="border max-w-[1090px] mx-auto">
       <Navbar></Navbar>
       {children}
+      <div className="w-96 h-96"></div>
     </div>
   );
 }
