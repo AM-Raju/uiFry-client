@@ -75,7 +75,7 @@ const Testimonial = () => {
                 alt="Person"
               ></Image>
             </div>
-            <div className="size-16  absolute -bottom-44 right-16 rounded-full overflow-hidden  border-4 border-gray-500 ">
+            <div className="size-16  absolute -bottom-16 right-16 rounded-full overflow-hidden  border-4 border-gray-500 ">
               <Image
                 className=""
                 src={"https://i.ibb.co/6nBTkTn/9.jpg"}
