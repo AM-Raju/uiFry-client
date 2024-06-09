@@ -2,6 +2,7 @@ import Advantages from "@/components/home/Advantages";
 import Banner from "@/components/home/Banner";
 import FAQ from "@/components/home/FAQ";
 import Features from "@/components/home/Features";
+import GetStarted from "@/components/home/GetStarted";
 import Testimonial from "@/components/home/Testimonial";
 
 const HomePage = () => {
@@ -12,6 +13,7 @@ const HomePage = () => {
       <Advantages></Advantages>
       <Testimonial></Testimonial>
       <FAQ></FAQ>
+      <GetStarted></GetStarted>
     </div>
   );
 };
