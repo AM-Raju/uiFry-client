@@ -6,21 +6,25 @@ import ColorPatch from "../shared/ColorPatch";
 
 import { GiStarShuriken } from "react-icons/gi";
 import { BiSolidQuoteLeft } from "react-icons/bi";
+import StarVector from "../shared/StarVector";
 
 const Testimonial = () => {
   return (
-    <div className="mt-28">
+    <div className="mt-28 px-3 xl:px-0">
       <div className="text-center">
         <h3 className="text-lg font-medium  uppercase tracking-widest">
           Testimonial
         </h3>
-        <h2 className="text-5xl font-bold max-w-[12ch] mx-auto">
+        <h2 className="text-3xl xl:text-5xl font-bold max-w-[12ch] mx-auto">
           What Our Users Says About Us?
         </h2>
       </div>
-      <div className="flex justify-between gap-12 mt-28">
+      <div className="flex flex-col xl:flex-row justify-between gap-12 mt-28">
         {/* Image block  */}
-        <div className="relative w-[540px]">
+        <div className="relative xl:w-[540px]">
+          <div className="absolute size-12 rotate-45 -bottom-28 -left-20">
+            <StarVector></StarVector>
+          </div>
           <Image
             className="absolute -z-10 -top-5 size-[550px] "
             src={circleImg}
@@ -28,12 +32,12 @@ const Testimonial = () => {
             height={536}
             alt="Three circle"
           ></Image>
-          <div className="absolute -z-20 top-10 -left-12 transform scale-x-[-1] rotate-45 size-[610px]">
+          <div className="absolute -z-20 top-10 -left-12 transform scale-x-[-1] rotate-45 w-96 xl:w-[610px] hidden">
             <ColorPatch></ColorPatch>
           </div>
           <div className="">
             {/* Focused Image */}
-            <div className="absolute top-1/2 left-40">
+            <div className="absolute top-40 left-20 xl:left-40">
               <div className="size-52 relative rounded-full overflow-hidden  border-4 border-gray-500 ">
                 <Image
                   className=""
@@ -51,7 +55,7 @@ const Testimonial = () => {
             <div className="size-28 absolute top-16 right-7 rounded-full overflow-hidden  border-4 border-gray-500 ">
               <Image
                 className=""
-                src={"https://i.ibb.co/6nBTkTn/9.jpg"}
+                src={"https://i.ibb.co/HKZJ8J8/2.jpg"}
                 width={300}
                 height={349}
                 alt="Person"
@@ -60,7 +64,7 @@ const Testimonial = () => {
             <div className="size-24 absolute top-4 left-10 rounded-full overflow-hidden  border-4 border-gray-500 ">
               <Image
                 className=""
-                src={"https://i.ibb.co/6nBTkTn/9.jpg"}
+                src={"https://i.ibb.co/VVhsMpP/6.jpg"}
                 width={300}
                 height={349}
                 alt="Person"
@@ -69,16 +73,16 @@ const Testimonial = () => {
             <div className="size-20 absolute top-96 left-20 rounded-full overflow-hidden  border-4 border-gray-500 ">
               <Image
                 className=""
-                src={"https://i.ibb.co/6nBTkTn/9.jpg"}
+                src={"https://i.ibb.co/sVgqZj8/5.jpg"}
                 width={300}
                 height={349}
                 alt="Person"
               ></Image>
             </div>
-            <div className="size-16  absolute -bottom-16 right-16 rounded-full overflow-hidden  border-4 border-gray-500 ">
+            <div className="size-16  absolute top-[420px] xl:-bottom-16 right-10 xl:right-16 rounded-full overflow-hidden  border-4 border-gray-500 ">
               <Image
                 className=""
-                src={"https://i.ibb.co/6nBTkTn/9.jpg"}
+                src={"https://i.ibb.co/Gk5h5MR/3.jpg"}
                 width={300}
                 height={349}
                 alt="Person"
@@ -87,7 +91,7 @@ const Testimonial = () => {
           </div>
         </div>
         {/* Text block */}
-        <div className="w-[450px] relative mt-10 flex items-center">
+        <div className="xl:w-[450px] relative mt-[500px] xl:mt-10 flex items-center ">
           <div className="">
             {/* Features block */}
             <div className="mt-8">
@@ -109,7 +113,7 @@ const Testimonial = () => {
               </div>
               {/* User profile thumbs */}
               <div className="flex gap-2">
-                <div className="size-8  rounded-full overflow-hidden  border-2 border-gray-500 ">
+                <div className="size-8  rounded-full overflow-hidden  border-2 border-gray-500 hover:scale-125 transition-all duration-300">
                   <Image
                     className=""
                     src={"https://i.ibb.co/6nBTkTn/9.jpg"}
@@ -118,37 +122,37 @@ const Testimonial = () => {
                     alt="Person"
                   ></Image>
                 </div>
-                <div className="size-8  rounded-full overflow-hidden  border-2 border-gray-500 ">
+                <div className="size-8  rounded-full overflow-hidden  border-2 border-gray-500 hover:scale-125 transition-all duration-300">
                   <Image
                     className=""
-                    src={"https://i.ibb.co/6nBTkTn/9.jpg"}
+                    src={"https://i.ibb.co/HKZJ8J8/2.jpg"}
                     width={300}
                     height={349}
                     alt="Person"
                   ></Image>
                 </div>
-                <div className="size-8  rounded-full overflow-hidden  border-2 border-gray-500 ">
+                <div className="size-8  rounded-full overflow-hidden  border-2 border-gray-500 hover:scale-125 transition-all duration-300">
                   <Image
                     className=""
-                    src={"https://i.ibb.co/6nBTkTn/9.jpg"}
+                    src={"https://i.ibb.co/Gk5h5MR/3.jpg"}
                     width={300}
                     height={349}
                     alt="Person"
                   ></Image>
                 </div>
-                <div className="size-8  rounded-full overflow-hidden  border-2 border-gray-500 ">
+                <div className="size-8  rounded-full overflow-hidden  border-2 border-gray-500 hover:scale-125 transition-all duration-300">
                   <Image
                     className=""
-                    src={"https://i.ibb.co/6nBTkTn/9.jpg"}
+                    src={"https://i.ibb.co/sVgqZj8/5.jpg"}
                     width={300}
                     height={349}
                     alt="Person"
                   ></Image>
                 </div>
-                <div className="size-8  rounded-full overflow-hidden  border-2 border-gray-500 ">
+                <div className="size-8  rounded-full overflow-hidden  border-2 border-gray-500 hover:scale-125 transition-all duration-300">
                   <Image
                     className=""
-                    src={"https://i.ibb.co/6nBTkTn/9.jpg"}
+                    src={"https://i.ibb.co/Gk5h5MR/3.jpg"}
                     width={300}
                     height={349}
                     alt="Person"

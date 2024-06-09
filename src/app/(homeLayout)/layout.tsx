@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "@/app/globals.css";
-import Navbar from "@/components/shared/Nav";
+import Nav from "@/components/shared/Nav";
 import Footer from "@/components/shared/Footer";
+import Navbar from "@/components/shared/Navbar";
 
 export const metadata: Metadata = {
   title: "UI-Fry",
@@ -15,7 +16,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <div className="border max-w-[1090px] mx-auto">
+    <div className="max-w-[1090px] mx-auto">
       <Navbar></Navbar>
       {children}
       <Footer></Footer>

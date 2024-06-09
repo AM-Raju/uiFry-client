@@ -3,7 +3,7 @@ import Logo from "./Logo";
 import Link from "next/link";
 import Button from "./Button";
 
-const Navbar = () => {
+const Nav = () => {
   return (
     <div className="flex justify-between items-center font-clashDisplay  pt-10 font-medium tracking-wide">
       <div className="flex gap-11 items-center">
@@ -22,4 +22,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Nav;

@@ -1,37 +1,105 @@
+"use client";
+import { animate, delay, motion } from "framer-motion";
+
 import Image from "next/image";
 import Button from "../shared/Button";
 import achievementImg from "@/assets/images/achievement.png";
 import mobileFront from "@/assets/images/iPhone-13-Pro-Front.png";
 import mobileMiddle from "@/assets/images/iPhone-13-Pro-middle.png";
 import circleImg from "@/assets/images/threeCircle.svg";
-import starIcon from "@/assets/images/Star.svg";
 import ColorPatch from "../shared/ColorPatch";
+import StarVector from "../shared/StarVector";
+import { FaRegCirclePlay } from "react-icons/fa6";
 
 const Banner = () => {
+  const movingLeftRight = {
+    initial: {
+      x: 10,
+    },
+    animate: {
+      x: -10,
+      transition: {
+        x: {
+          duration: 1,
+          repeat: Infinity,
+          repeatType: "reverse",
+          ease: "easeInOut",
+        },
+      },
+    },
+  };
+
+  const circleOpacity = {
+    initial: {
+      opacity: 0,
+    },
+    animate: {
+      opacity: 100,
+      transition: {
+        duration: 2,
+        ease: "easeInOut",
+      },
+    },
+  };
+
+  const fromRight = {
+    initial: {
+      x: 800,
+    },
+    animate: {
+      x: 0,
+      transition: {
+        x: {
+          duration: 1,
+          ease: "easeInOut",
+        },
+      },
+    },
+  };
+  const fromTop = {
+    initial: {
+      y: -800,
+    },
+    animate: {
+      y: 0,
+      transition: {
+        x: {
+          duration: 1,
+          ease: "easeInOut",
+        },
+      },
+    },
+  };
+  const fromLeft = {
+    initial: {
+      x: -1400,
+    },
+    animate: {
+      x: 0,
+      transition: {
+        x: {
+          duration: 1,
+          ease: "easeInOut",
+        },
+      },
+    },
+  };
   return (
-    <div className="flex items-center justify-between relative">
-      <Image
-        className="absolute -top-12 -right-28"
-        src={starIcon}
-        width={64}
-        height={52}
-        alt="Star Icon"
-      ></Image>
-      <Image
-        className="absolute top-5 -left-24 size-12 -rotate-45"
-        src={starIcon}
-        width={64}
-        height={52}
-        alt="Star Icon"
-      ></Image>
+    <div className="flex flex-col-reverse xl:flex-row items-center justify-between relative mt-36 lg:mt-0">
+      <div className="absolute -top-12 right-0 lg:-right-28 ">
+        <StarVector></StarVector>
+      </div>
+      <div className="absolute top-5 -left-24 size-12 -rotate-45">
+        <StarVector></StarVector>
+      </div>
       {/* Color Patch */}
-      <div className="absolute -z-20 -top-24 left-28 size-[450px] rotate-180">
+      <div className="absolute -z-20 -top-24 lg:left-28 lg:size-[450px] rotate-180 ">
         <ColorPatch></ColorPatch>
       </div>
       {/* Text Block */}
-      <div className="mt-[115px]">
+      <div className="relative -top-44 md:max-xl:top-0 xl:top-0  xl:mt-[115px] px-3 lg:px-0 ">
         <div className="space-y-6">
-          <h1 className="text-6xl font-bold">
+          <h1 className="text-3xl xl:text-6xl font-bold">
             Make The Best <br /> Financial Decisions
           </h1>
           <p className="max-w-[50ch] font-medium tracking-wide text-gray-500">
@@ -56,80 +124,83 @@ const Banner = () => {
                 />
               </svg>
             </Button>
-            <button className="flex items-center justify-center gap-4 font-medium text-lg">
-              <svg
-                width="29"
-                height="29"
-                viewBox="0 0 29 29"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <circle cx="14.5" cy="14.5" r="14" stroke="black" />
-                <path
-                  d="M11 19.0809V9.91907C11 9.52282 11.4389 9.28402 11.7716 9.49929L18.8512 14.0802C19.1557 14.2772 19.1557 14.7228 18.8512 14.9198L11.7716 19.5007C11.4389 19.716 11 19.4772 11 19.0809Z"
-                  fill="black"
-                  stroke="black"
-                />
-              </svg>
+            <button className="flex items-center justify-center gap-4  font-medium text-lg hover:text-[#ff5555] transition-all duration-300">
+              <FaRegCirclePlay className="text-3xl" />
               Watch Video
             </button>
           </div>
         </div>
         <div className="mt-4 relative">
-          <Image
-            className="absolute top-14  left-36 size-12 -rotate-45"
-            src={starIcon}
-            width={64}
-            height={52}
-            alt="Star Icon"
-          ></Image>
-          <Image
-            src={achievementImg}
-            width={569}
-            height={358}
-            alt="Achievement"
-          ></Image>
+          <div className="absolute lg:top-14  left-36 size-12 -rotate-45">
+            <StarVector></StarVector>
+          </div>
+          <motion.div
+            variants={movingLeftRight}
+            initial="initial"
+            animate="animate"
+          >
+            <Image
+              src={achievementImg}
+              width={569}
+              height={358}
+              alt="Achievement"
+            ></Image>
+          </motion.div>
         </div>
       </div>
       {/* Mobile Block */}
-      <div>
+      <div className="">
         {/* Circle BG */}
-        <Image
-          className="absolute top-0 -right-20 size-[610px]"
-          src={circleImg}
-          width={656}
-          height={726}
-          alt="Three circle"
-        ></Image>
-        <div className="relative w-[500px] h-[590px]">
+        <motion.div
+          variants={circleOpacity}
+          initial="initial"
+          animate="animate"
+        >
           <Image
-            className="absolute bottom-28 left-24 size-12 "
-            src={starIcon}
-            width={64}
-            height={52}
-            alt="Star Icon"
+            className="absolute -top-32 lg:top-0 right-0 md:max-xl:right-10  xl:-right-20  w-[610px] "
+            src={circleImg}
+            width={656}
+            height={726}
+            alt="Three circle"
           ></Image>
-          <Image
-            className="absolute -top-2 left-36"
-            src={mobileFront}
-            width={572}
-            height={752}
-            alt="Mobile Front"
-          ></Image>
-          <Image
-            className="absolute -top-16 left-10"
-            src={mobileMiddle}
-            width={572}
-            height={752}
-            alt="Mobile Front"
-          ></Image>
-          <Image
-            className="absolute -top-32 -left-16"
-            src={mobileFront}
-            width={572}
-            height={752}
-            alt="Mobile Front"
-          ></Image>
+        </motion.div>
+        <div className="relative max-lg:w-[300px] w-[500px] h-[590px]">
+          <div className="absolute lg:bottom-10 left-14 size-12 ">
+            <StarVector></StarVector>
+          </div>
+          <div className="relative lg:top-10">
+            <motion.div
+              variants={fromRight}
+              initial="initial"
+              animate="animate"
+            >
+              <Image
+                className="absolute -top-2 left-[110px] lg:left-36 max-sm:w-[220px] w-[380px] drop-shadow-2xl"
+                src={mobileFront}
+                width={572}
+                height={752}
+                alt="Mobile Front"
+              ></Image>
+            </motion.div>
+            <motion.div variants={fromTop} initial="initial" animate="animate">
+              <Image
+                className="absolute -top-16 left-10 lg:left-14 max-sm:w-[220px] w-[380px]"
+                src={mobileMiddle}
+                width={572}
+                height={752}
+                alt="Mobile Front"
+              ></Image>
+            </motion.div>
+            <motion.div variants={fromLeft} initial="initial" animate="animate">
+              <Image
+                className="absolute -top-32 -left-8 max-sm:w-[220px] w-[380px]"
+                src={mobileFront}
+                width={572}
+                height={752}
+                alt="Mobile Front"
+              ></Image>
+            </motion.div>
+          </div>
         </div>
       </div>
     </div>
