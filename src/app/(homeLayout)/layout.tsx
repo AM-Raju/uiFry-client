@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "@/app/globals.css";
 import Navbar from "@/components/shared/Nav";
+import Footer from "@/components/shared/Footer";
 
 export const metadata: Metadata = {
   title: "UI-Fry",
@@ -17,7 +18,7 @@ export default function RootLayout({
     <div className="border max-w-[1090px] mx-auto">
       <Navbar></Navbar>
       {children}
-      <div className="w-96 h-96"></div>
+      <Footer></Footer>
     </div>
   );
 }

@@ -47,7 +47,7 @@ const GetStarted = () => {
               alt="IPhone"
             ></Image>
             <Image
-              className="absolute -bottom-36 right-10 z-40 w-[220px] h-[358px]"
+              className="absolute -bottom-32 right-10 z-40 w-[220px] h-[358px]"
               src={mobile2}
               height={236}
               width={394}
