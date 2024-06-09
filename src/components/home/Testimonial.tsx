@@ -1,14 +1,29 @@
+"use client";
 import Image from "next/image";
-import iphoneImg2 from "@/assets/images/iphone-features.png";
-import onHoldImg2 from "@/assets/images/adv2-on-hold.png";
 import circleImg from "@/assets/images/threeCircle.png";
 import ColorPatch from "../shared/ColorPatch";
-
-import { GiStarShuriken } from "react-icons/gi";
 import { BiSolidQuoteLeft } from "react-icons/bi";
 import StarVector from "../shared/StarVector";
 
+import { motion } from "framer-motion";
+
 const Testimonial = () => {
+  const zoom = {
+    initial: {
+      scale: 0.95,
+    },
+    animate: {
+      scale: 1,
+      transition: {
+        scale: {
+          duration: 1,
+          repeat: Infinity,
+          repeatType: "reverse",
+          ease: "easeInOut",
+        },
+      },
+    },
+  };
   return (
     <div id="testimonials" className="mt-28 px-3 xl:px-0">
       <div className="text-center">
@@ -26,19 +41,24 @@ const Testimonial = () => {
             <StarVector></StarVector>
           </div>
           <Image
-            className="absolute -z-10 -top-5 size-[550px] "
+            className="absolute -z-10 -top-5 w-[550px] "
             src={circleImg}
             width={536}
             height={536}
             alt="Three circle"
           ></Image>
-          <div className="absolute -z-20 top-10 -left-12 transform scale-x-[-1] rotate-45 w-96 xl:w-[610px] hidden">
+          <div className="absolute -z-20 top-10 -left-12 transform scale-x-[-1] rotate-45 w-96 xl:w-[610px]">
             <ColorPatch></ColorPatch>
           </div>
           <div className="">
             {/* Focused Image */}
             <div className="absolute top-40 left-20 xl:left-40">
-              <div className="size-52 relative rounded-full overflow-hidden  border-4 border-gray-500 ">
+              <motion.div
+                variants={zoom}
+                initial="initial"
+                animate="animate"
+                className="size-52 relative rounded-full overflow-hidden  border-4 border-gray-500 "
+              >
                 <Image
                   className=""
                   src={"https://i.ibb.co/6nBTkTn/9.jpg"}
@@ -46,7 +66,7 @@ const Testimonial = () => {
                   height={349}
                   alt="Person"
                 ></Image>
-              </div>
+              </motion.div>
               <div className=" bg-[#ff5555] size-16 flex items-center justify-center rounded-full absolute top-16 -right-8 text-4xl text-white">
                 <BiSolidQuoteLeft />
               </div>

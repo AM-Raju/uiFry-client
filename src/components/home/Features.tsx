@@ -14,7 +14,7 @@ const Features = () => {
     >
       {/* Image block  */}
       <div className="relative xl:w-[540px] ">
-        <div className="absolute size-12 rotate-45 -top-12 -left-28">
+        <div className="absolute size-12 rotate-45 -top-12 -left-28 ">
           <StarVector></StarVector>
         </div>
         <Image
