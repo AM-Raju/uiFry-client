@@ -85,7 +85,10 @@ const Banner = () => {
     },
   };
   return (
-    <div className="flex flex-col-reverse xl:flex-row items-center justify-between relative mt-36 lg:mt-0">
+    <div
+      id="home"
+      className="flex flex-col-reverse xl:flex-row items-center justify-between relative mt-36 lg:mt-0"
+    >
       <div className="absolute -top-12 right-0 lg:-right-28 ">
         <StarVector></StarVector>
       </div>

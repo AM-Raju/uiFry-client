@@ -3,7 +3,7 @@ import StarVector from "../shared/StarVector";
 
 const FAQ = () => {
   return (
-    <div className="mt-24 xl:mt-56 px-3 xl:px-0 ">
+    <div id="faq" className=" mt-24 xl:mt-56 px-3 xl:px-0 ">
       <div className="relative">
         <div className="absolute size-16 top-16 left-1/2">
           <StarVector></StarVector>

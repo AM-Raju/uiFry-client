@@ -10,7 +10,7 @@ import StarVector from "../shared/StarVector";
 
 const Testimonial = () => {
   return (
-    <div className="mt-28 px-3 xl:px-0">
+    <div id="testimonials" className="mt-28 px-3 xl:px-0">
       <div className="text-center">
         <h3 className="text-lg font-medium  uppercase tracking-widest">
           Testimonial

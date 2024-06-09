@@ -40,23 +40,46 @@ const Navbar = () => {
             <li>
               <Link href="#">Features</Link>
             </li>
+            <li>
+              <Link href="#faq" scroll={true}>
+                FAQ
+              </Link>
+            </li>
           </ul>
         </div>
         <Logo></Logo>
       </div>
-      <div className="navbar-center hidden lg:flex font-medium tracking-wider text-lg relative -left-52 ">
+      <div className="navbar-center hidden lg:flex font-medium tracking-wider text-lg  ">
         <ul className="flex gap-5 px-1">
           <li className="hover:text-[#ff5555] hover:font-bold transition-all duration-300 ">
-            <Link href="#">Home</Link>
+            <Link href="#home" scroll={true}>
+              Home
+            </Link>
           </li>
           <li className="hover:text-[#ff5555] hover:font-bold transition-all duration-300">
-            <Link href="#">About Us</Link>
+            <Link href="#features" scroll={true}>
+              Features
+            </Link>
           </li>
           <li className="hover:text-[#ff5555] hover:font-bold transition-all duration-300">
-            <Link href="#">Pricing</Link>
+            <Link href="#advantages" scroll={true}>
+              Advantages
+            </Link>
           </li>
           <li className="hover:text-[#ff5555] hover:font-bold transition-all duration-300">
-            <Link href="#">Features</Link>
+            <Link href="#testimonials" scroll={true}>
+              Testimonials
+            </Link>
+          </li>
+          <li className="hover:text-[#ff5555] hover:font-bold transition-all duration-300">
+            <Link href="#faq" scroll={true}>
+              FAQ
+            </Link>
+          </li>
+          <li className="hover:text-[#ff5555] hover:font-bold transition-all duration-300">
+            <Link href="#getStarted" scroll={true}>
+              Get Started
+            </Link>
           </li>
         </ul>
       </div>

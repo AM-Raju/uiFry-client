@@ -9,7 +9,7 @@ import { FaApple } from "react-icons/fa";
 
 const GetStarted = () => {
   return (
-    <div className="relative">
+    <div id="getStarted" className="relative">
       <div className="absolute -top-52 -left-72 rotate-180 transform scale-x-[-1] -z-10">
         <ColorPatch></ColorPatch>
       </div>

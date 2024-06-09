@@ -7,7 +7,7 @@ import Testimonial from "@/components/home/Testimonial";
 
 const HomePage = () => {
   return (
-    <div>
+    <div className="!scroll-smooth">
       <Banner></Banner>
       <Features></Features>
       <Advantages></Advantages>

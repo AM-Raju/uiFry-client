@@ -3,12 +3,15 @@ import iphoneImg from "@/assets/images/iphone-features.png";
 import circleImg from "@/assets/images/threeCircle.png";
 import ColorPatch from "../shared/ColorPatch";
 import starIcon from "@/assets/icons/star.png";
-import star from "@/assets/images/Star.svg";
+
 import StarVector from "../shared/StarVector";
 
 const Features = () => {
   return (
-    <div className="flex flex-col xl:flex-row gap-12 xl:mt-28 px-3 x:px-0 ">
+    <div
+      id="features"
+      className="flex flex-col xl:flex-row gap-12 xl:mt-28 px-3 x:px-0 "
+    >
       {/* Image block  */}
       <div className="relative xl:w-[540px] ">
         <div className="absolute size-12 rotate-45 -top-12 -left-28">

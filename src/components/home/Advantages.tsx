@@ -11,7 +11,7 @@ import StarVector from "../shared/StarVector";
 
 const Advantages = () => {
   return (
-    <div className="px-3 xl:px-0">
+    <div id="advantages" className="px-3 xl:px-0">
       {/* Advantages one */}
       <div className="flex flex-col-reverse xl:flex-row gap-12 mt-28  ">
         {/* Text block */}
