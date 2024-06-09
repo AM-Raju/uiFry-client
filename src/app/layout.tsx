@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { ClashDisplay } from "@/utils/customFonts";
 
 import "./globals.css";
+import { ThemeProvider } from "next-themes";
 
 /* export const metadata: Metadata = {
   title: 'Create Next App',
@@ -16,7 +17,9 @@ export default function RootLayout({
   return (
     <html lang="en" className="!scroll-smooth">
       <body className={`${ClashDisplay.variable} font-clashDisplay `}>
-        {children}
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );

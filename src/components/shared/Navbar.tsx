@@ -2,10 +2,11 @@ import React from "react";
 import Logo from "./Logo";
 import Link from "next/link";
 import Button from "./Button";
+import DarkModeToggle from "./DarkModeToggle";
 
 const Navbar = () => {
   return (
-    <div className="navbar bg-base-100 pt-10">
+    <div className="navbar  pt-10">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -50,7 +51,7 @@ const Navbar = () => {
         <Logo></Logo>
       </div>
       <div className="navbar-center hidden lg:flex font-medium tracking-wider text-lg  ">
-        <ul className="flex gap-5 px-1">
+        <ul className="flex gap-5 px-1 relative -left-14">
           <li className="hover:text-[#ff5555] hover:font-bold transition-all duration-300 ">
             <Link href="#home" scroll={true}>
               Home
@@ -82,6 +83,9 @@ const Navbar = () => {
             </Link>
           </li>
         </ul>
+      </div>
+      <div className="ml-5">
+        <DarkModeToggle></DarkModeToggle>
       </div>
       <div className="navbar-end">
         <Button>Download</Button>

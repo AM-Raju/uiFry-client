@@ -26,7 +26,7 @@ const FAQ = () => {
             In ultrices malesuada elit mauris.
           </p>
         </div>
-        <div className="xl:w-[535px] xl:h-[181px]  rounded-lg p-7 text-black">
+        <div className="xl:w-[535px] xl:h-[181px]  rounded-lg p-7 text-[#afafaf]">
           <h3 className="font-semibold text-xl  xl:text-3xl">
             The Best Financial Accounting App Ever!
           </h3>
@@ -35,16 +35,7 @@ const FAQ = () => {
             In ultrices malesuada elit mauris.
           </p>
         </div>
-        <div className="xl:w-[535px] xl:h-[181px]  rounded-lg p-7 text-black">
-          <h3 className="font-semibold text-xl  xl:text-3xl">
-            The Best Financial Accounting App Ever!
-          </h3>
-          <p className="font-medium text-md xl:text-lg">
-            Arcu at dictum sapien, mollis. Vulputate sit id accumsan, ultricies.
-            In ultrices malesuada elit mauris.
-          </p>
-        </div>
-        <div className="xl:w-[535px] xl:h-[181px] bg-[#ff5555] rounded-lg p-7 text-white">
+        <div className="xl:w-[535px] xl:h-[181px]  rounded-lg p-7 text-[#afafaf]">
           <h3 className="font-semibold text-xl  xl:text-3xl">
             The Best Financial Accounting App Ever!
           </h3>
@@ -62,7 +53,16 @@ const FAQ = () => {
             In ultrices malesuada elit mauris.
           </p>
         </div>
-        <div className="xl:w-[535px] xl:h-[181px]  rounded-lg p-7 text-black">
+        <div className="xl:w-[535px] xl:h-[181px] bg-[#ff5555] rounded-lg p-7 text-white">
+          <h3 className="font-semibold text-xl  xl:text-3xl">
+            The Best Financial Accounting App Ever!
+          </h3>
+          <p className="font-medium text-md xl:text-lg">
+            Arcu at dictum sapien, mollis. Vulputate sit id accumsan, ultricies.
+            In ultrices malesuada elit mauris.
+          </p>
+        </div>
+        <div className="xl:w-[535px] xl:h-[181px]  rounded-lg p-7 text-[#afafaf]">
           <h3 className="font-semibold text-xl  xl:text-3xl">
             The Best Financial Accounting App Ever!
           </h3>

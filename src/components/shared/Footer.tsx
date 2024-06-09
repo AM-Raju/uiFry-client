@@ -41,7 +41,7 @@ const Footer = () => {
           <h2 className="text-4xl font-medium">Newsletter</h2>
           <p className="font-medium text-lg mt-4">Stay Up To Date</p>
           <div className="mt-4 xl:mt-0">
-            <input type="text" placeholder="Your Email" />
+            <input className="px-5 py-4" type="text" placeholder="Your Email" />
             <button className="text-lg font-medium text-white bg-black px-10 py-4 rounded-md hover:bg-[#ff5555] transition-all duration-300">
               Subscribe
             </button>
@@ -49,7 +49,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="w-full h-0.5 rounded-2xl  bg-gradient-to-l from-transparent via-black to-transparent tracking-wider"></div>
-      <p className="font-medium text-lg text-center my-10">
+      <p className="font-medium text-lg text-center py-10 ">
         Copyright 2024 uifry.com all rights reserved
       </p>
     </div>
